@@ -1,12 +1,9 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  width: 100%;
 }
 
 .logo {
-  height: 6em;
+  height: 60px;
   padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;
@@ -17,7 +14,176 @@
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
+h1{
+   font-size: 48px;
+  font-weight: 700;
+  color: #1F346B;
 
+}
+h2 {
+  font-size: 32px;
+  font-weight: 600;
+  color: #1F346B;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #1F346B;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: 500;
+  color: #1F346B;
+}
+
+h5 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #1F346B;
+}
+
+h6 {
+  font-size: 16px;
+  font-weight: 500;
+ color: #1F346B;
+}
+header{
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav{
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+}
+/* home */
+.container{
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+    text-align: center;
+
+}
+
+.section{
+  display: flex;
+  width: 100%;
+  gap: 5rem;
+  margin: 80px 0 80px 0;
+}
+.section-item{
+width: 50%;
+}
+.section-item>img{
+  object-fit: cover;
+  width: 100%;
+}
+.ad-section{
+  width: 100%;
+  object-fit: cover;
+  max-height: 200px;
+}
+.load-more{
+ color: red;
+}
+footer{
+  text-align: center;
+  height: 90px ;
+  background-color: #1F346B;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Demand Course */
+.courses-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-bottom: 30px
+}
+.course{
+  width: 350px;
+ max-height: 700px;
+ overflow-y: hidden;
+  border-radius: 10px;                  
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+  margin: 30px;
+  padding-bottom: 30px;
+  
+}
+.course:hover,
+.course:focus{
+   transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(16,24,40,0.12);
+}
+.course-img{
+width: 100%;
+height: 200px;
+ object-fit: cover; 
+ object-position: center;
+}
+.course-content{
+  padding: 20px;
+    text-align: left;
+
+}
+.enroll-btn{
+   border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1F346B;
+  color: #fff;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+.enroll-btn:hover {
+  background-color: red;
+}
+.enroll-btn:focus,
+.enroll-btn:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+/* Demand Course Detailed Page */
+.detail-container{
+   max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+/* Review */
+.all-reviews{
+  display: flex;
+justify-content: space-evenly;
+margin-bottom: 40px;
+}
+.review{
+  display: flex;
+  width: 40%;
+  border-radius: 10px;                  
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  padding: 20px 15px 2px 15px;
+  background-color: #1F346B;
+  color: white;
+}
+.review-img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.review-name{
+font-weight: 700;
+font-style: italic;
+}
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
