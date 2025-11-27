@@ -1,9 +1,9 @@
 import React from 'react'
-import { courseData } from '../data/Data'
+import { demandCoursesData } from '../data/Data'
 import { NavLink } from 'react-router-dom'
 
 export default function Demandcourses() {
-    const displayDemandCourses=courseData.map(course=>{
+    const displayDemandCourses=demandCoursesData.map(course=>{
         return(
            <div className='course' key={course.id}>
                 <div>

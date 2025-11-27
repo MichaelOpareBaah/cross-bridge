@@ -116,7 +116,9 @@ footer{
   cursor: pointer;
   margin: 30px;
   padding-bottom: 30px;
-  
+  display: flex;
+  flex-direction: column;
+align-items: center;  
 }
 .course:hover,
 .course:focus{
@@ -174,6 +176,12 @@ margin-bottom: 40px;
   padding: 20px 15px 2px 15px;
   background-color: #1F346B;
   color: white;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.review:hover{
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.18);
 }
 .review-img{
   width: 50px;
@@ -183,6 +191,37 @@ margin-bottom: 40px;
 .review-name{
 font-weight: 700;
 font-style: italic;
+}
+/* About Us */
+.about-us-text{
+  margin-bottom: 5rem;
+}
+.concepts{
+  display: flex;
+  gap: 4rem;
+}
+.concept-item{
+  border: 2px solid #1F346B;
+  border-radius: 5px ;
+  width: 30%;
+  background-color: #1F346B;
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.concept-item:hover{
+    transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.18);
+}
+.concept-item>h2{
+  color: #fff;
+}
+.train-with-us-items{
+  text-align: left;
+}
+.train-with-us-items > ul >li{
+    padding: 10px 0;
+
 }
 @keyframes logo-spin {
   from {

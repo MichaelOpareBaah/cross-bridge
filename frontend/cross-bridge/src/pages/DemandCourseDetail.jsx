@@ -1,5 +1,5 @@
 import React from 'react'
-import {courseData} from '../data/Data'
+import {demandCoursesData} from '../data/Data'
 import { useParams } from 'react-router'
 
 
@@ -10,7 +10,7 @@ export default function DemandCourseDetail() {
     objectFit:'cover'
   }
     const {id} =useParams()
-    const displayParam=courseData.find((item) => item.id === Number(id))
+    const displayParam=demandCoursesData.find((item) => item.id === Number(id))
   return (
     <div className='detail-container'>
         <h4>{displayParam.caption}</h4>

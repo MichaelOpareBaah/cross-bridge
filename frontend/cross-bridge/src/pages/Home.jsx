@@ -26,7 +26,7 @@ export default function Home() {
             </p>
         </div>
         <Demandcourses />
-        <Link className='load-more'>Load more...</Link>
+        <Link className='enroll-btn'>Load more...</Link>
         <div className='section'>
             <div className='section-item'>
                 <img src={sectionImg} alt=''/>

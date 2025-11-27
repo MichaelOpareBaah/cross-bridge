@@ -18,6 +18,7 @@ function App() {
       <Route index element={<Home/>}></Route>
       <Route path='about-us' element={<AboutUs/>}></Route>
       <Route path='demand-course-detail/:id' element={<DemandCourseDetail />}></Route>
+      <Route path='/courses/demand-course-detail/:id' element={<DemandCourseDetail />}></Route>
       <Route path='courses' element={<Courses />}></Route>
        <Route path='contact-us' element={<ContactUs />}></Route>
        <Route path='alumni-news' element={<News />}></Route>
