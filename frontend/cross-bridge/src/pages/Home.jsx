@@ -18,7 +18,7 @@ export default function Home() {
       <div className="container">
         <div>
           <h1 data-aos="fade-left">CrossBridge Leadership Institute</h1>
-          <p data-aos="fade-right">
+          <p data-aos="fade-right" className="text-justify">
             CLIGhana and our affiliates is a lifelong entity, headquartered in
             Ghana with a global reach. Devoted to understanding the links among
             learning, researching, training, and helping formulate policy on
@@ -34,29 +34,30 @@ export default function Home() {
           </p>
         </div>
         <Demandcourses />
-        <Link className="enroll-btn">Load more...</Link>
+        <Link className="enroll-btn">All Courses...</Link>
         <div className="section">
           <div className="section-item" data-aos="fade-left">
             <img src={sectionImg} alt="" />
           </div>
           <div className="section-item" data-aos="fade-right">
             <h2>Why Train withUs?</h2>
-            <p>
-              {" "}
-              CrossBridge Leadership Institute, its subsidiaries and affiliate
-              entities have developed a curriculum resource in direct response
-              to the observed lack of initial and on the job comprehensive
-              training to enable clients work without apprehension.
-            </p>
-            <p>
-              The programme and modules are what any client-entity needs as the
-              converging learning and training backbone to offset the imbalance
-              in our fluid environment.
-            </p>
-            <p>
-              Each programme is tailored to fit the environmental and
-              operational conditions of our client-entities.
-            </p>
+            <div className="text-justify">
+              <p>
+                CrossBridge Leadership Institute, its subsidiaries and affiliate
+                entities have developed a curriculum resource in direct response
+                to the observed lack of initial and on the job comprehensive
+                training to enable clients work without apprehension.
+              </p>
+              <p>
+                The programme and modules are what any client-entity needs as
+                the converging learning and training backbone to offset the
+                imbalance in our fluid environment.
+              </p>
+              <p>
+                Each programme is tailored to fit the environmental and
+                operational conditions of our client-entities.
+              </p>
+            </div>
           </div>
         </div>
 

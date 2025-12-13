@@ -32,7 +32,7 @@ export default function Header() {
           to="alumni-news"
           className={({ isActive }) => (isActive ? "active" : "")}
         >
-          Alumni News
+          Media
         </NavLink>
         <NavLink
           to="contact-us"

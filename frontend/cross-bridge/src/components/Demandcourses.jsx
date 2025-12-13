@@ -10,13 +10,13 @@ export default function Demandcourses() {
   }, []);
   const displayDemandCourses = demandCoursesData.map((course) => {
     return (
-      <div className="course" data-aos="zoom-in" key={course.id}>
+      <div className="course " data-aos="zoom-in" key={course.id}>
         <div>
           <img src={course.img} alt="" className="course-img" />
         </div>
         <div className="course-content">
-          <h3 className="course-caption">{course.caption}</h3>
-          <p>{course.text}</p>
+          <h3 className="course-caption ">{course.caption}</h3>
+          <p className="text-justify">{course.text}</p>
         </div>
 
         <NavLink
