@@ -34,7 +34,9 @@ export default function Home() {
           </p>
         </div>
         <Demandcourses />
-        <Link className="enroll-btn">All Courses...</Link>
+        <Link to="courses" className="enroll-btn">
+          All Courses...
+        </Link>
         <div className="section">
           <div className="section-item" data-aos="fade-left">
             <img src={sectionImg} alt="" />

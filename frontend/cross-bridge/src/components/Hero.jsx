@@ -1,21 +1,26 @@
-import React, { useEffect } from "react";
+import { useEffect, useState } from "react";
 import hero from "../assets/sectionImg.png";
+import heroGraduate from "../assets/graduate.jpg";
+import heroReunion from "../assets/Reunion.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
+const images = [hero, heroGraduate, heroReunion];
 export default function Hero() {
+  const [index, setIndex] = useState(0);
   useEffect(() => {
     AOS.init();
+    const interval = setInterval(() => {
+      setIndex((prev) => (prev + 1) % images.length);
+    }, 4000);
+
+    return () => clearInterval(interval);
   }, []);
-  const styles = {
-    width: "100%",
-    height: "600px",
-    objectFit: "cover",
-    objectPosition: "center",
-    marginBottom: "40px",
-  };
+
   return (
-    <div data-aos="fade-up-left">
-      <img src={hero} alt="" style={styles} />
-    </div>
+    <div
+      data-aos="fade-up-left"
+      className="hero"
+      style={{ backgroundImage: `url(${images[index]})` }}
+    ></div>
   );
 }

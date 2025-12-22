@@ -19,6 +19,24 @@ export const demandCoursesData = [
     caption: "Zero to 1,000: Social Media for Campaigns",
     text: "Online fundraising is essential for winning campaigns. The best way to grow your digital fundraising is to grow your campaigns email list.",
   },
+  {
+    id: 4,
+    img: courseThumb,
+    caption: "Zero to 1,000: Social Media for Campaigns",
+    text: "Online fundraising is essential for winning campaigns. The best way to grow your digital fundraising is to grow your campaigns email list.",
+  },
+  {
+    id: 5,
+    img: courseThumb,
+    caption: "Zero to 1,000: Social Media for Campaigns",
+    text: "Online fundraising is essential for winning campaigns. The best way to grow your digital fundraising is to grow your campaigns email list.",
+  },
+  {
+    id: 5,
+    img: courseThumb,
+    caption: "Zero to 1,000: Social Media for Campaigns",
+    text: "Online fundraising is essential for winning campaigns. The best way to grow your digital fundraising is to grow your campaigns email list.",
+  },
 ];
 
 export const allCoursesData = [

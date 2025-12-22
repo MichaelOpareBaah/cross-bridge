@@ -17,6 +17,12 @@
 .active{
  font-weight: bold;
   color: red;}
+  .hero {
+  height: 90vh;
+  background-size: cover;
+  background-position: center;
+  transition: background-image 0.8s ease-in-out;
+}
 h1{
    font-size: 48px;
   font-weight: 700;
@@ -98,21 +104,16 @@ width: 50%;
 .load-more{
  color: red;
 }
-footer{
-  text-align: center;
-  height: 90px ;
-  background-color: #1F346B;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+
 /* Demand Course */
 .courses-wrapper{
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-evenly;
-  margin-bottom: 30px
+  margin-bottom: 30px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    animation: scroll 20s linear infinite;
+     width: max-content;
 }
 .course{
   width: 350px;
@@ -127,6 +128,8 @@ footer{
   display: flex;
   flex-direction: column;
 align-items: center;  
+flex-shrink: 0;
+ scroll-snap-align: start;
 }
 .course:hover,
 .course:focus{
@@ -252,13 +255,49 @@ font-style: italic;
   border-radius: 50%;
 
 }
-
+.sub-footer{
+  display: flex;
+  justify-content: space-around;
+  align-items: first baseline;
+  background-color: #4A5568;
+  color: #fff;
+  padding-bottom: 2em;
+}
+footer{
+  text-align: center;
+  height: 90px ;
+  background-color: #1F346B;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-sub-links{
+  color: #fff;
+}
+.quick-links{
+  display: flex;
+  flex-direction: column;
+}
+.social-media-icons{
+  display: flex;
+  justify-content: space-around;
+}
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
+  }
+}
+/* animation */
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
   }
 }
 
